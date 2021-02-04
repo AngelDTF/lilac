@@ -23,8 +23,8 @@ if (browser)
 			}
 			else if (request.url == '/favicon.ico')
 			{
-				output.info(`Redirecting Data '/favicon.ico' to '/../ico/favicon.ico'.`);
-				request.url = '/../ico/favicon.ico';
+				output.info(`Redirecting Data '/favicon.ico' to '/static/ico/favicon.ico'.`);
+				request.url = '/static/ico/favicon.ico';
 			}
 			/* Redirects End */
 
