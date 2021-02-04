@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/AngelDTF/lilac/issues"
   },
-  "homepage": "https://github.com/AngelDTF/lilac#readme"
+  "homepage": "https://github.com/AngelDTF/lilac#readme",
+  "devDependencies": {
+    "electron": "^11.2.2"
+  }
 }

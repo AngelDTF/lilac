@@ -50,5 +50,18 @@ if (browser)
 }
 else
 {
+	const { app, BrowserWindow } = require('electron');
 
+	function CreateWindow()
+	{
+		const win = new BrowserWindow(
+		{
+			width: 800,
+			height: 600
+		});
+
+		win.loadFile('static/html/index.html');
+	}
+
+	app.whenReady().then(CreateWindow);
 }
