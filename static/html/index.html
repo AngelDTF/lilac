@@ -8,12 +8,30 @@
 	</head>
 	<body>
 		<div id="sidebar">
-			<div id="sidebar-actions">
+			<div id="sidebar-actions" style="display: none;">
 				<div class="sidebar-action" type="New"><span class="material-icons">add</span></div>
 				<div class="sidebar-action" type="Workspace Explorer" active="true"><span class="material-icons">file_copy</span></div>
+				<div class="sidebar-action" type="Preferences" style="margin-top: auto"><span class="material-icons">settings</span></div>
 			</div>
 			<div id="sidebar-explorer">
-				<div id="sidebar-explorer-title">Workspace Explorer</div>
+				<div id="sidebar-explorer-title">
+					<div>Workspace Explorer</div>
+					<div id="sidebar-explorer-actions">
+						<div class="sidebar-explorer-action" type="New File"><span class="material-icons">note_add</span></div>
+						<div class="sidebar-explorer-action" type="New Folder"><span class="material-icons">create_new_folder</span></div>
+						<div class="sidebar-explorer-action" type="More..."><span class="material-icons">more_horiz</span></div>
+					</div>
+				</div>
+				<div class="sidebar-explorer-category" collapsed="false">
+					<div class="category-title">
+						<span class="material-icons">expand_more</span>
+						<div class="category-title-name">Editor</div>
+					</div>
+					<div class="category-inner">
+						<div class="sidebar-explorer-item"><span class="material-icons">insert_drive_file</span> untitled 1</div>
+					</div>
+				</div>
+				<div class="sidebar-explorer-item"><span class="material-icons">insert_drive_file</span> untitled 2</div>
 			</div>
 		</div>
 		<div id="inner">
@@ -34,4 +52,5 @@
 			</div>
 		</div>
 	</body>
+	<script src="../js/lilac.js"></script>
 </html>
