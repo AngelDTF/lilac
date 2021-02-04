@@ -1,0 +1,29 @@
+{
+  "name": "lilac",
+  "version": "1.0.0",
+  "description": "A simple yet powerful open source IDE.",
+  "main": "src/main/main.js",
+  "scripts": {
+    "browser": "node . --browser",
+    "electron": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelDTF/lilac.git"
+  },
+  "keywords": [
+    "lilac",
+    "lilac-ide",
+    "open-source",
+    "nodejs",
+    "electron",
+    "webapp",
+    "desktopapp"
+  ],
+  "author": "Angel Bot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelDTF/lilac/issues"
+  },
+  "homepage": "https://github.com/AngelDTF/lilac#readme"
+}
