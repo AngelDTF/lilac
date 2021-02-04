@@ -33,6 +33,8 @@ if (browser)
 				response.setHeader('Content-Type', 'text/html');
 			else if (request.url.startsWith('/static/css'))
 				response.setHeader('Content-Type', 'text/css');
+			else if (request.url.startsWith('/static/js'))
+				response.setHeader('Content-Type', 'text/javascript');
 			response.writeHead(200);
 			response.end(data);
 		}
@@ -56,8 +58,8 @@ else
 	{
 		const win = new BrowserWindow(
 		{
-			width: 800,
-			height: 600
+			width: 1080,
+			height: 716
 		});
 
 		win.loadFile('static/html/index.html');

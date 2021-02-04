@@ -1,0 +1,12 @@
+:root
+{
+	--background-primary: #444444;
+	--background-secondary: #333333;
+	--background-tertiary: #222222;
+
+	--foreground-primary: #FFFFFF;
+	--foreground-secondary: #DDDDDD;
+	--foreground-tertiary: #CCCCCC;
+	--foreground-link: #0000FF;
+	--foreground-link-hover: #0022FF;
+}

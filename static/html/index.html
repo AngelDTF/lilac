@@ -2,8 +2,36 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="../css/lilac.css">
+		<link rel="stylesheet" href="../css/themes/lilac-dark.css">
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 	<body>
-		<div></div>
+		<div id="sidebar">
+			<div id="sidebar-actions">
+				<div class="sidebar-action" type="New"><span class="material-icons">add</span></div>
+				<div class="sidebar-action" type="Workspace Explorer" active="true"><span class="material-icons">file_copy</span></div>
+			</div>
+			<div id="sidebar-explorer">
+				<div id="sidebar-explorer-title">Workspace Explorer</div>
+			</div>
+		</div>
+		<div id="inner">
+			<div id="splash">
+				<div id="splash-text">lilac</div>
+				<div id="splash-row">
+					<div id="splash-row-left">
+						<div class="splash-text-tips">New File</div>
+						<div class="splash-text-tips">Open File</div>
+						<div class="splash-text-tips">Open Folder</div>
+					</div>
+					<div id="splash-row-right">
+						<code>Ctrl+N</code>
+						<code>Ctrl+O</code>
+						<code>Ctrl+Shift+O</code>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
