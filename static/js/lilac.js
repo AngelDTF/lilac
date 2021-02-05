@@ -21,6 +21,35 @@ function parseBool(string)
 
 }
 
+function setSelected(element)
+{
+    selectedItem = element;
+    document.querySelectorAll('.sidebar-explorer-category, .sidebar-explorer-item').forEach(item =>
+    {
+        if (item == selectedItem)
+            item.classList.add('item-selected');
+        else
+            item.classList.remove('item-selected');
+    });
+}
+
+function setEditing(element)
+{
+    editing = element;
+    var splash = document.querySelector('#splash');
+    if (editing == null)
+        splash.style.display = '';
+    else
+        splash.style.display = 'none';
+    document.querySelectorAll('.sidebar-explorer-category[editorCategory="true"] .sidebar-explorer-item').forEach(item =>
+    {
+        if (item == element)
+            item.setAttribute('editing', 'true');
+        else
+            item.setAttribute('editing', 'false');
+    })
+}
+
 document.querySelectorAll('.sidebar-explorer-category').forEach(cat =>
 {
     cat.querySelector('.category-title').addEventListener('click', () =>
@@ -41,27 +70,11 @@ document.querySelectorAll('.sidebar-explorer-item').forEach(item =>
 
 if (editing == null)
 {
-    editing = document.querySelector('.sidebar-explorer-category[editorCategory="true"]');
-    if (editing)
+    var eitem = document.querySelector('.sidebar-explorer-category[editorCategory="true"]');
+    if (eitem)
     {
-        editing = editing.querySelector('.sidebar-explorer-item');
-        if (editing)
-            editing.setAttribute('editing', 'true');
-        else
-            editing = null;
+        eitem = eitem.querySelector('.sidebar-explorer-item');
+        if (eitem)
+            setEditing(eitem);
     }
-    else
-        editing = null;
-}
-
-function setSelected(element)
-{
-    selectedItem = element;
-    document.querySelectorAll('.sidebar-explorer-category, .sidebar-explorer-item').forEach(item =>
-    {
-        if (item == selectedItem)
-            item.classList.add('item-selected');
-        else
-            item.classList.remove('item-selected');
-    });
 }
