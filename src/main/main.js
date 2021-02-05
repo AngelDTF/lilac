@@ -35,6 +35,8 @@ if (browser)
 				response.setHeader('Content-Type', 'text/css');
 			else if (request.url.startsWith('/static/js'))
 				response.setHeader('Content-Type', 'text/javascript');
+			else if (request.url.startsWith('/static/png'))
+				response.setHeader('Content-Type', 'image/png');
 			response.writeHead(200);
 			response.end(data);
 		}
