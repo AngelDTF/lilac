@@ -12,7 +12,7 @@ body { margin: 0; width: 100vw; height: 100vh; display: flex; flex-direction: ro
 .sidebar-action[active="true"] { color: var(--foreground-primary); }
 .sidebar-action[active="true"]::after { content: ''; height: 48px; border-left: 2px solid var(--foreground-primary); position: absolute; left: 0; }
 .sidebar-action span { font-size: 36px !important; user-select: none; }
-#sidebar-explorer { width: 300px; height: 100%; padding-top: 40px; display: flex; flex-direction: column; flex: 0 0 auto; background: var(--background-secondary); position: relative; }
+#sidebar-explorer { width: 300px; padding-top: 40px; display: flex; flex-direction: column; flex: 0 0 auto; background: var(--background-secondary); position: relative; }
 #sidebar-explorer-title { position: absolute; font-size: 18px; padding-bottom: 2px; color: var(--foreground-secondary); position: absolute; top: 6px; left: 6px; width: 288px; border-bottom: 1px solid rgba(128, 128, 128, 0.75); }
 #sidebar-explorer-actions { position: absolute; top: 0; right: -2px; display: flex; flex-direction: row; }
 .sidebar-explorer-action { width: 24px; height: 24px; margin: 0 3px; cursor: pointer; color: var(--foreground-tertiary); }

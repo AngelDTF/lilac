@@ -7,6 +7,6 @@
 	"appearance":
 	{
 		"theme":"lilac-dark",
-		"useActionBar":false
+		"useActionBar":true
 	}
 }

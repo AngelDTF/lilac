@@ -1,5 +1,14 @@
+var config;
 var editing = null;
 var selectedItem = null;
+
+config = fetch('../../config.json').then(d => d.json().then(json =>
+{
+    config = json;
+
+    document.querySelector('link#theme').href = `../css/themes/${config.appearance.theme}.css`;
+    document.querySelector('#sidebar-actions').style.display = config.appearance.useActionBar ? '' : 'none';
+}));
 
 function parseBool(string)
 {
